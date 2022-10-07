@@ -60,11 +60,13 @@ export class ProductsService extends ApiService {
       console.warn(
         'Endpoint "bff" is disabled. To enable change your environment.ts config'
       );
-      return this.http.get<Product[]>('/assets/products.json');
+      return this.http.get<Product[]>('https://23ld61bqe2.execute-api.eu-west-1.amazonaws.com/products');
     }
 
-    const url = this.getUrl('bff', 'products');
-    return this.http.get<Product[]>(url);
+    // const url = this.getUrl('bff', 'products');
+    // return this.http.get<Product[]>(url);
+    // const url = this.getUrl('bff', 'products');
+    return this.http.get<Product[]>('https://23ld61bqe2.execute-api.eu-west-1.amazonaws.com/products');
   }
 
   getProductsForCheckout(ids: string[]): Observable<Product[]> {
