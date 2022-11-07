@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import {
+  HttpErrorResponse,
   HttpEvent,
   HttpHandler,
   HttpInterceptor,
@@ -19,11 +20,23 @@ export class ErrorPrintInterceptor implements HttpInterceptor {
   ): Observable<HttpEvent<unknown>> {
     return next.handle(request).pipe(
       tap({
-        error: () => {
+        error: (error: unknown) => {
           const url = new URL(request.url);
+          const { status } = error as HttpErrorResponse
+          let message
+          switch (status) {
+            case 401:
+              message = `Error 401. Not authorized to "${url.pathname}`;
+              break;
+            case 403:
+              message = `Error 403. Access to "${url.pathname} is denied`;
+              break;
+            default:
+              message = `Request to "${url.pathname}" failed. Check the console for the details`;
+          }
 
           this.notificationService.showError(
-            `Request to "${url.pathname}" failed. Check the console for the details`,
+            message,
             0
           );
         },

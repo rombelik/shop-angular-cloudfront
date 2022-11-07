@@ -2,7 +2,7 @@ CloudFront (manual deployment).<br />
 [https://d3q3b1c41oxz3w.cloudfront.net](https://d3q3b1c41oxz3w.cloudfront.net) to view it in the browser.
 
 CloudFront (autodeploy using serverless).<br />
-[https://d3q3b1c41oxz3w.cloudfront.net](https://d3q3b1c41oxz3w.cloudfront.net) to view it in the browser.
+[https://d3q3b1c41oxz3w.cloudfront.net](https://a.cloudfront.net) to view it in the browser.
 
 S3 bucket returns 403 error  (autodeploy using serverless).<br />
 [http://node-in-aws-web-dev-18092022-1.s3-website-eu-west-1.amazonaws.com/](http://node-in-aws-web-dev-18092022-1.s3-website-eu-west-1.amazonaws.com/)

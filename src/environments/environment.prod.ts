@@ -3,17 +3,17 @@ import { Config } from './config.interface';
 export const environment: Config = {
   production: true,
   apiEndpoints: {
-    product: 'https://.execute-api.eu-west-1.amazonaws.com/dev',
-    order: 'https://.execute-api.eu-west-1.amazonaws.com/dev',
-    import: 'https://d267wwtk98.execute-api.eu-west-1.amazonaws.com/dev',
+    product: 'http://rombelik-cart-api-dev.eu-west-1.elasticbeanstalk.com',
+    order: 'http://rombelik-cart-api-dev.eu-west-1.elasticbeanstalk.com',
+    import: 'https://b8hevac9zk.execute-api.eu-west-1.amazonaws.com/dev',
     bff: 'https://.execute-api.eu-west-1.amazonaws.com/dev',
-    cart: 'https://.execute-api.eu-west-1.amazonaws.com/dev',
+    cart: 'http://rombelik-cart-api-dev.eu-west-1.elasticbeanstalk.com'
   },
   apiEndpointsEnabled: {
-    product: false,
-    order: false,
+    product: true,
+    order: true,
     import: true,
     bff: false,
-    cart: false,
+    cart: true,
   },
 };
