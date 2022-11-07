@@ -317,7 +317,8 @@
     },
     "plugins": [
       "serverless-finch",
-      "serverless-single-page-app-plugin"
+      "serverless-single-page-app-plugin",
+      "serverless-cloudfront-invalidate"
     ],
     "pluginsData": {},
     "functions": {},
@@ -477,7 +478,7 @@
     "isDashboardMonitoringPreconfigured": false
   },
   "package": {
-    "artifactDirectoryName": "serverless/node-in-aws-web-2/dev/1664033493550-2022-09-24T15:31:33.550Z",
+    "artifactDirectoryName": "serverless/node-in-aws-web-2/dev/1666528650592-2022-10-23T12:37:30.592Z",
     "artifact": ""
   }
 }
