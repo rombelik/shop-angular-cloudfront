@@ -36,6 +36,7 @@
     "@angular/router": "~12.0.0",
     "bootstrap": "^4.6.0",
     "rxjs": "~6.6.0",
+    "serverless-cloudfront-invalidate": "^1.12.2",
     "serverless-finch": "^4.0.0",
     "serverless-single-page-app-plugin": "^1.0.4",
     "tslib": "^2.0.0",

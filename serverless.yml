@@ -15,6 +15,7 @@ plugins:
   # Existing plugin (https://www.npmjs.com/package/serverless-single-page-app-plugin) doesn't have invalidate cache feature that often used during CI/CD events.
   # How to build your own plugins: https://www.serverless.com/framework/docs/providers/aws/guide/plugins#service-local-plugin
   - serverless-single-page-app-plugin
+  # - serverless-cloudfront-invalidate
 
 custom:
   client:
